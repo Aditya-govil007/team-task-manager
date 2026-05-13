@@ -1,0 +1,217 @@
+---
+pid: 21584
+cwd: |
+  C:\Users\Aditya Govil\.cursor\projects\empty-window\server
+active_command: npm run dev
+---
+PS C:\Users\Aditya Govil> pwd
+
+Path
+----
+C:\Users\Aditya Govil
+
+
+PS C:\Users\Aditya Govil> dir
+
+
+    Directory: C:\Users\Aditya Govil
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13-05-2026  01:48 PM                .antigravity
+d-----        13-08-2025  12:53 AM                .cache
+d-----        13-05-2026  01:58 PM                .cursor
+d-----        13-05-2026  01:48 PM                .gemini
+d-----        15-03-2026  04:14 PM                .th-client
+d-----        23-07-2025  11:38 PM                .vscode
+d-----        03-05-2026  10:57 AM                .vscode-shared
+d-r---        24-07-2025  02:00 PM                Contacts
+d-r---        15-04-2026  12:24 PM                Desktop
+d-----        23-07-2025  11:41 PM                Documents
+d-r---        13-05-2026  01:47 PM                Downloads
+d-r---        24-07-2025  02:00 PM                Favorites
+d-r---        24-07-2025  02:00 PM                Links
+d-r---        24-07-2025  02:00 PM                Music
+dar--l        13-05-2026  11:18 AM                OneDrive
+d-----        14-10-2025  12:07 PM                Packages
+d-r---        24-07-2025  02:00 PM                Saved Games
+d-r---        24-07-2025  02:00 PM                Searches
+d-----        13-08-2025  01:18 AM                udyam-project
+d-r---        13-05-2026  11:17 AM                Videos
+-a----        20-03-2026  03:14 PM             66 .gitconfig
+-a----        22-04-2026  02:19 PM             26 .lesshst
+-a----        14-08-2025  12:06 PM            971 .viminfo
+-a----        13-05-2026  02:16 PM             91 package-lock.json
+
+
+PS C:\Users\Aditya Govil> cd .cursor
+PS C:\Users\Aditya Govil\.cursor> dir
+
+
+    Directory: C:\Users\Aditya Govil\.cursor
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13-05-2026  02:11 PM                ai-tracking
+d-----        13-05-2026  01:58 PM                extensions
+d-----        13-05-2026  01:52 PM                plugins
+d-----        13-05-2026  01:58 PM                projects
+d-----        13-05-2026  01:58 PM                skills-cursor
+-a----        13-05-2026  01:52 PM            985 .gitignore
+-a----        13-05-2026  01:52 PM            798 argv.json
+
+
+PS C:\Users\Aditya Govil\.cursor> cd projects
+PS C:\Users\Aditya Govil\.cursor\projects> dir
+
+
+    Directory: C:\Users\Aditya Govil\.cursor\projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13-05-2026  01:52 PM                1778660524787
+d-----        13-05-2026  01:52 PM                C-Users-ADITYA-1-AppData-Local-Temp-c8f75e31-f4e9-4c74-ba85-fec51200a447
+d-----        13-05-2026  02:05 PM                empty-window
+
+
+PS C:\Users\Aditya Govil\.cursor\projects> cd 1778660524787
+PS C:\Users\Aditya Govil\.cursor\projects\1778660524787> dr
+dr : The term 'dr' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the      
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dr
++ ~~
+    + CategoryInfo          : ObjectNotFound: (dr:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\1778660524787> dir
+
+
+    Directory: C:\Users\Aditya Govil\.cursor\projects\1778660524787
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13-05-2026  01:52 PM                canvases
+d-----        13-05-2026  01:58 PM                terminals
+
+
+PS C:\Users\Aditya Govil\.cursor\projects\1778660524787> cd canvases
+PS C:\Users\Aditya Govil\.cursor\projects\1778660524787\canvases> dir
+PS C:\Users\Aditya Govil\.cursor\projects\1778660524787\canvases> cd "C:\Users\Aditya Govil\.cursor\projects\empty-window"
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window> dir
+
+
+    Directory: C:\Users\Aditya Govil\.cursor\projects\empty-window
+
+----                 -------------         ------ ----
+d-----        13-05-2026  01:58 PM                agent-transcripts
+d-----        13-05-2026  01:58 PM                canvases
+d-----        13-05-2026  02:03 PM                client
+d-----        13-05-2026  01:58 PM                mcps
+d-----        13-05-2026  02:02 PM                server
+d-----        13-05-2026  02:19 PM                terminals
+-a----        13-05-2026  02:01 PM             62 .gitignore
+-a----        13-05-2026  02:05 PM            140 nixpacks.toml
+-a----        13-05-2026  02:01 PM            382 package.json
+-a----        13-05-2026  02:05 PM            216 railway.json
+-a----        13-05-2026  02:05 PM           3298 README.md
+
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window> npm install
+
+added 292 packages, and audited 295 packages in 32s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+2 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window> cd server
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npx prisma generate
+Prisma schema loaded from prisma\schema.prisma
+
+✔ Generated Prisma Client (v6.19.3) to .\..\node_modules\@prisma\client in 304ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npx prisma migrate dev --name init
+Prisma schema loaded from prisma\schema.prisma
+Error: Prisma schema validation - (get-config wasm)
+Error code: P1012
+error: Environment variable not found: DATABASE_URL.
+  -->  prisma\schema.prisma:7
+   |
+ 6 |   provider = "postgresql"
+ 7 |   url      = env("DATABASE_URL")
+   |
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 6.19.3
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> server/.env
+server/.env : The term 'server/.env' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the    
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ server/.env
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (server/.env:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server>
+
+                                                               npx prisma migrate dev --name init
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "neondb", schema "public" at "ep-dark-lab-aq2x1t5f-pooler.c-8.us-east-1.aws.neon.tech"
+
+Already in sync, no schema change or pending migration was found.
+
+✔ Generated Prisma Client (v6.19.3) to .\..\node_modules\@prisma\client in 154ms
+
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npm run dev
+
+> server@1.0.0 dev
+> tsx watch src/index.ts
+
+Server running on port 5000
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npm run dev
+
+> server@1.0.0 dev
+> tsx watch src/index.ts
+
+Server running on port 5000
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npm run dev
+
+> server@1.0.0 dev
+> tsx watch src/index.ts
+
+Server running on port 5000
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npm run dev
+
+> server@1.0.0 dev
+> tsx watch src/index.ts
+
+Server running on port 5000
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\server> npm run dev
+
+> server@1.0.0 dev
+> tsx watch src/index.ts
+
+Server running on port 5000
+^V^V^V^V^V^V^V^V^V^V^V^V^V^V^V

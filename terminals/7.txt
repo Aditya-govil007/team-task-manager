@@ -1,0 +1,288 @@
+---
+pid: 4248
+cwd: |
+  C:\Users\Aditya Govil\.cursor\projects\empty-window\client
+active_command: npm run dev
+last_exit_code: 0
+---
+PS C:\Users\Aditya Govil> cd "C:\Users\Aditya Govil\.cursor\projects\empty-window"
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window> cd client
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm install
+
+up to date, audited 295 packages in 3s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+2 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+> client@1.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 927 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+3:48:03 pm [vite] .env changed, restarting server...
+3:48:03 pm [vite] server restarted.
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> Run `npm audit` for details.
+Run : The term 'Run' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Run `npm audit` for details.
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (Run:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+Get-Process : A positional parameter cannot be found that accepts argument 'Govil\.cursor\projects\empty-window\client>'.
+At line:1 char:1
++ PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm ru ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> > client@1.0.0 dev
+> : The term '>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ > client@1.0.0 dev
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> > vite
+> : The term '>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ > vite
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   VITE v5.4.21  ready in 927 ms
+VITE : The term 'VITE' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   VITE v5.4.21  ready in 927 ms
++   ~~~~
+    + CategoryInfo          : ObjectNotFound: (VITE:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  Local:   http://localhost:5173/
+➜ : The term '➜' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   ➜  Local:   http://localhost:5173/
++   ~
+    + CategoryInfo          : ObjectNotFound: (➜:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  Network: use --host to expose
+➜ : The term '➜' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   ➜  Network: use --host to expose
++   ~
+    + CategoryInfo          : ObjectNotFound: (➜:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  press h + enter to show help
+➜ : The term '➜' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   ➜  press h + enter to show help
++   ~
+    + CategoryInfo          : ObjectNotFound: (➜:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 3:48:03 pm [vite] .env changed, restarting server...
+3:48:03 : The term '3:48:03' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ 3:48:03 pm [vite] .env changed, restarting server...
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (3:48:03:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 3:48:03 pm [vite] server restarted.^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev                                        .
+
+> client@1.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 446 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+> client@1.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 426 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
+Get-Process : A positional parameter cannot be found that accepts argument 'Govil\.cursor\projects\empty-window\client>'.
+At line:1 char:1
++ PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> ^C
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+Get-Process : A positional parameter cannot be found that accepts argument 'Govil\.cursor\projects\empty-window\client>'.
+At line:1 char:1
++ PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm ru ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Process], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetProcessCommand
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> > client@1.0.0 dev
+> : The term '>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ > client@1.0.0 dev
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> > vite
+> : The term '>' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ > vite
++ ~
+    + CategoryInfo          : ObjectNotFound: (>:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> Port 5173 is in use, trying another one...
+Port : The term 'Port' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Port 5173 is in use, trying another one...
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Port:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   VITE v5.4.21  ready in 426 ms
+VITE : The term 'VITE' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   VITE v5.4.21  ready in 426 ms
++   ~~~~
+    + CategoryInfo          : ObjectNotFound: (VITE:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> 
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  Local:   http://localhost:5174/
+➜ : The term '➜' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   ➜  Local:   http://localhost:5174/
++   ~
+    + CategoryInfo          : ObjectNotFound: (➜:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  Network: use --host to expose
+➜ : The term '➜' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, 
+or if a path was included, verify that the path is correct and try again.
+At line:1 char:3
++   ➜  Network: use --host to expose
++   ~
+    + CategoryInfo          : ObjectNotFound: (➜:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  press h + enter to show help ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client>   ➜  Local:   http://localhost:5174/ ^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+> client@1.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 419 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+3:55:02 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css
+3:55:03 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x2)
+3:55:05 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x3)
+3:55:10 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x4)
+3:55:12 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x5)
+3:55:12 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x6)
+3:55:13 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x7)
+3:55:14 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x8)
+3:55:15 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x9)
+PS>^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+> client@1.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 803 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+3:59:28 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css
+3:59:29 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x2)
+3:59:30 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x3)
+3:59:33 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x4)
+3:59:34 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x5)
+3:59:35 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x6)
+PS>^C
+PS C:\Users\Aditya Govil\.cursor\projects\empty-window\client> npm run dev
+
+> client@1.0.0 dev
+> vite
+
+Port 5173 is in use, trying another one...
+
+  VITE v5.4.21  ready in 427 ms
+
+  ➜  Local:   http://localhost:5174/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+4:01:14 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css
+4:01:24 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x2)
+4:01:24 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x3)
+4:01:25 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x4)
+4:01:28 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css (x5)
+4:05:10 pm [vite] hmr update /src/components/Card.tsx, /src/index.css
+4:05:34 pm [vite] hmr update /src/pages/DashboardPage.tsx, /src/index.css
+4:05:40 pm [vite] hmr update /src/pages/LoginPage.tsx, /src/index.css
+4:05:48 pm [vite] hmr update /src/pages/SignupPage.tsx, /src/index.css
+4:05:56 pm [vite] page reload index.html
