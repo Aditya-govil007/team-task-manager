@@ -49,3 +49,8 @@ build
 coverage
 .env
 .vscode
+
+browser_*
+INSTRUCTIONS*
+SERVER_METADATA*
+*.jsonl
