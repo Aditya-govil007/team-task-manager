@@ -12,11 +12,6 @@ build/
 **/.env.*
 !**/.env.example
 
-# Cursor / IDE project metadata (do not commit)
-mcps/
-terminals/
-agent-transcripts/
-.cursor/
 
 # Logs & debug
 *.log
@@ -47,10 +42,7 @@ server/generated/
 .idea/
 *.pem
 
-.cursor
-mcps
-agent-transcripts
-terminals
+
 node_modules
 dist
 build
