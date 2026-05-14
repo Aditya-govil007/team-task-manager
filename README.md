@@ -1,164 +1,254 @@
-# Team Task Manager MVP
+# Team Task Manager
 
-Production-ready MVP with:
-- React + Vite + TypeScript + Tailwind frontend
-- Express + TypeScript backend
-- Prisma + PostgreSQL
-- JWT auth + RBAC (Admin/Member)
-- Railway deployment config
+A modern full-stack collaborative task management platform built with React, TypeScript, Node.js, Express, Prisma, and PostgreSQL.
 
-## 1) Folder Structure
+The application supports multi-user collaboration with role-based access control, task assignment, project management, analytics, Kanban workflow, dark mode, and team coordination features.
 
-```txt
-team-task-manager-mvp/
-  client/
-    src/
-      components/
-        Card.tsx
-        ProtectedRoute.tsx
-      context/
-        AuthContext.tsx
-      pages/
-        DashboardPage.tsx
-        LoginPage.tsx
-        SignupPage.tsx
-      services/
-        api.ts
-      types/
-        index.ts
-      App.tsx
-      main.tsx
-      index.css
-    .env.example
-    index.html
-    package.json
-    postcss.config.js
-    tailwind.config.js
-    tsconfig.json
-    vite.config.ts
-  server/
-    prisma/
-      schema.prisma
-    src/
-      config/
-        env.ts
-        prisma.ts
-      controllers/
-        auth.controller.ts
-        project.controller.ts
-        task.controller.ts
-      middlewares/
-        async.middleware.ts
-        auth.middleware.ts
-        error.middleware.ts
-      routes/
-        auth.routes.ts
-        project.routes.ts
-        task.routes.ts
-      types/
-        express.d.ts
-      app.ts
-      index.ts
-    .env.example
-    package.json
-    tsconfig.json
-  .gitignore
-  nixpacks.toml
-  package.json
-  railway.json
-  README.md
+---
+
+# Features
+
+## Authentication & Authorization
+- JWT-based authentication
+- Secure login/signup flow
+- Role-based access control (ADMIN / MEMBER)
+- Protected routes and APIs
+
+## Project Management
+- Create and manage projects
+- Add/remove project members
+- Shared collaborative workspace
+- Project visibility based on membership
+
+## Task Management
+- Create and assign tasks
+- Due dates and overdue tracking
+- Task status updates
+- Member-specific task visibility
+- Search and filter tasks
+- Kanban board workflow
+
+## Dashboard & Analytics
+- Task statistics
+- Completion percentage
+- Pending/In Progress/Completed counts
+- Overdue tracking
+- Recent activity feed
+
+## UI/UX
+- Responsive modern dashboard
+- Dark mode support
+- Toast notifications
+- Clean Kanban-style interface
+
+---
+
+# Tech Stack
+
+## Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Hot Toast
+
+## Backend
+- Node.js
+- Express.js
+- TypeScript
+- Prisma ORM
+- PostgreSQL
+
+## Deployment
+- Vercel (Frontend)
+- Render (Backend)
+- Neon PostgreSQL
+
+---
+
+# Project Structure
+
+```bash
+client/
+├── src/
+│   ├── pages/
+│   ├── components/
+│   ├── api/
+│   └── context/
+
+server/
+├── prisma/
+├── src/
+│   ├── controllers/
+│   ├── routes/
+│   ├── services/
+│   ├── middlewares/
+│   ├── validators/
+│   └── config/
 ```
 
-## 2) Backend Setup
+---
+
+# Installation & Setup
+Clone Repository
+
+```bash
+git clone https://github.com/your-username/team-task-manager.git
+cd team-task-manager
+```
+
+---
+
+# Backend Setup
+Navigate to server
+
+```bash
+cd server
+```
+
+Install dependencies
 
 ```bash
 npm install
-cp server/.env.example server/.env
 ```
 
-Set real values in `server/.env`, then:
+Configure environment variables
 
 ```bash
-npm run prisma:generate --workspace server
-npm run prisma:migrate --workspace server
-npm run dev:server
-```
-
-## 3) Frontend Setup
-
-```bash
-cp client/.env.example client/.env
-npm run dev:client
-```
-
-## 4) Prisma Schema
-
-Implemented in `server/prisma/schema.prisma`:
-- `User` (role: ADMIN/MEMBER)
-- `Project`
-- `ProjectMember` (many-to-many user↔project)
-- `Task` (status, assignee, due date)
-
-## 5) Express Server Setup
-
-- Entry point: `server/src/index.ts`
-- App config: `server/src/app.ts`
-- Middleware:
-  - JWT auth (`authenticate`)
-  - RBAC (`authorize`)
-  - async error wrapper
-  - global error handler
-
-### Core REST APIs
-
-- `POST /api/auth/signup`
-- `POST /api/auth/login`
-- `GET /api/projects`
-- `POST /api/projects` (admin only)
-- `POST /api/projects/:projectId/members` (admin only)
-- `GET /api/tasks`
-- `POST /api/tasks`
-- `PATCH /api/tasks/:taskId`
-- `GET /api/tasks/dashboard/summary`
-
-## 6) Tailwind Setup
-
-Configured in:
-- `client/tailwind.config.js`
-- `client/postcss.config.js`
-- `client/src/index.css`
-
-## 7) Environment Variables
-
-### Backend (`server/.env`)
-
-```env
+Create .env
+DATABASE_URL=your_database_url
+JWT_SECRET=your_secret_key
 PORT=5000
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/team_task_manager"
-JWT_SECRET="replace-with-strong-secret"
-CORS_ORIGIN="http://localhost:5173"
+CORS_ORIGIN=http://localhost:5173
 ```
 
-### Frontend (`client/.env`)
+Run Prisma migrations
 
-```env
-VITE_API_URL="http://localhost:5000/api"
+```bash
+npx prisma migrate dev
 ```
 
-## 8) Railway Deployment Prep
+Start backend server
 
-Included:
-- `railway.json` with start command
-- `nixpacks.toml` for Node 20 build/runtime
+```bash
+npm run dev
+```
 
-### Railway steps
+Backend runs on:
 
-1. Create new Railway project and connect this repo.
-2. Add a PostgreSQL service in Railway.
-3. Set backend variables:
-   - `DATABASE_URL` (from Railway Postgres)
-   - `JWT_SECRET`
-   - `CORS_ORIGIN` (frontend domain)
-   - `PORT` (Railway injects; keep optional)
-4. Deploy.
-5. For frontend deployment, host `client` separately (Vercel/Netlify/Railway static) and set `VITE_API_URL` to backend URL.
+```bash
+http://localhost:5000
+```
+
+---
+
+# Frontend Setup
+
+Navigate to client
+
+```bash
+cd client
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create .env
+
+```bash
+VITE_API_URL=http://localhost:5000/api
+```
+
+Start frontend
+
+```bash
+npm run dev
+```
+
+Frontend runs on:
+
+```bash
+http://localhost:5173
+```
+---
+
+#Role-Based Workflow
+
+## Admin
+- Create projects
+- Add project members
+- Assign tasks
+- View all project analytics
+- Manage task workflow
+
+## Member
+
+- View joined projects
+- View assigned tasks
+- Update task status
+- Collaborate inside shared workspace
+
+---
+
+# API Overview
+
+Auth
+
+```http
+POST /api/auth/signup
+POST /api/auth/login
+```
+
+Projects
+
+```http
+GET    /api/projects
+POST   /api/projects
+POST   /api/projects/:id/members
+GET    /api/projects/:id/members
+DELETE /api/projects/:id/members/:userId
+```
+
+Tasks
+
+```http
+GET    /api/tasks
+POST   /api/tasks
+PATCH  /api/tasks/:id
+PATCH  /api/tasks/:id/assign
+GET    /api/tasks/my-tasks
+```
+---
+
+# Key Features Implemented
+
+- Role-based access control
+- Shared project collaboration
+- Kanban task management
+- Dark mode
+- Activity tracking
+- Analytics dashboard
+- Overdue task highlighting
+- Search and filtering
+- Toast notifications
+
+---
+
+# Deployment Links
+
+Frontend
+https://team-task-manager-1-qcxf.onrender.com
+
+Backend
+https://team-task-manager-qfy9.onrender.com/
+
+---
+
+# Author
+
+Aditya Govil
+
+GitHub: https://github.com/Aditya-govil007
