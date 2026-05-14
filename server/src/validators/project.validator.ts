@@ -21,3 +21,10 @@ export const addProjectMemberSchema = {
     userId: z.string().uuid()
   })
 };
+
+export const removeProjectMemberSchema = {
+  params: z.object({
+    id: z.string().uuid(),
+    userId: z.string().uuid()
+  })
+};

@@ -15,7 +15,17 @@ export async function getTasksByProject(req: Request, res: Response) {
 }
 
 export async function updateTaskStatus(req: Request, res: Response) {
-  const task = await taskService.updateTaskStatus(req.params.id, req.body.status, req.user!.id);
+  const task = await taskService.updateTaskStatus(
+    req.params.id,
+    req.body.status,
+    req.user!.id,
+    req.user!.role
+  );
+  return res.status(200).json(task);
+}
+
+export async function assignTask(req: Request, res: Response) {
+  const task = await taskService.assignTask(req.params.id, req.body.userId);
   return res.status(200).json(task);
 }
 

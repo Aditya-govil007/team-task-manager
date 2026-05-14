@@ -33,7 +33,12 @@ export async function createProject(input: CreateProjectInput) {
 
 export async function getProjectsForUser(userId: string) {
   return prisma.project.findMany({
-    where: { members: { some: { userId } } },
+    where: {
+      OR: [
+        { createdById: userId },
+        { members: { some: { userId } } }
+      ]
+    },
     include: {
       members: {
         include: {
@@ -49,7 +54,13 @@ export async function getProjectsForUser(userId: string) {
 
 export async function getProjectById(projectId: string, userId: string) {
   const project = await prisma.project.findFirst({
-    where: { id: projectId, members: { some: { userId } } },
+    where: {
+      id: projectId,
+      OR: [
+        { createdById: userId },
+        { members: { some: { userId } } }
+      ]
+    },
     include: {
       members: {
         include: {
@@ -85,15 +96,47 @@ export async function addProjectMember(projectId: string, userId: string) {
     throw new AppError("User not found", 404);
   }
 
-  return prisma.projectMember.upsert({
-    where: { projectId_userId: { projectId, userId } },
-    create: { projectId, userId },
-    update: {},
+  const existingMember = await prisma.projectMember.findUnique({
+    where: { projectId_userId: { projectId, userId } }
+  });
+
+  if (existingMember) {
+    throw new AppError("User is already a project member", 409);
+  }
+
+  return prisma.projectMember.create({
+    data: { projectId, userId },
     include: {
       user: {
         select: { id: true, name: true, email: true, role: true }
       }
     }
+  });
+}
+
+export async function getProjectMembers(projectId: string) {
+  return prisma.projectMember.findMany({
+    where: { projectId },
+    include: {
+      user: {
+        select: { id: true, name: true, email: true, role: true }
+      }
+    },
+    orderBy: { createdAt: "asc" }
+  });
+}
+
+export async function removeProjectMember(projectId: string, userId: string) {
+  const membership = await prisma.projectMember.findUnique({
+    where: { projectId_userId: { projectId, userId } }
+  });
+
+  if (!membership) {
+    throw new AppError("Project member not found", 404);
+  }
+
+  await prisma.projectMember.delete({
+    where: { projectId_userId: { projectId, userId } }
   });
 }
 

@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import api from "../services/api";
 import { useAuth } from "../context/AuthContext";
 
@@ -19,9 +20,11 @@ export default function LoginPage() {
     try {
       const { data } = await api.post("/auth/login", { email, password });
       setAuth(data.token, data.user);
+      toast.success("Logged in successfully");
       navigate("/");
     } catch {
       setError("Invalid credentials");
+      toast.error("Invalid credentials");
     }
   }
 

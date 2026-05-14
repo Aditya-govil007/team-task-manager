@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 import api from "../services/api";
 import { useAuth } from "../context/AuthContext";
 
@@ -24,9 +25,11 @@ export default function SignupPage() {
     try {
       const { data } = await api.post("/auth/signup", { name, email, password, role });
       setAuth(data.token, data.user);
+      toast.success("Account created successfully");
       navigate("/");
     } catch {
       setError("Signup failed");
+      toast.error("Signup failed");
     }
   }
 

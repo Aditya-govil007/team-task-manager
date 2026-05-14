@@ -15,6 +15,18 @@ export async function addProjectMember(req: Request, res: Response) {
   return res.status(201).json(member);
 }
 
+export async function getProjectMembers(req: Request, res: Response) {
+  await projectService.assertProjectMember(req.params.id, req.user!.id);
+  const members = await projectService.getProjectMembers(req.params.id);
+  return res.status(200).json(members);
+}
+
+export async function removeProjectMember(req: Request, res: Response) {
+  await projectService.assertProjectMember(req.params.id, req.user!.id);
+  await projectService.removeProjectMember(req.params.id, req.params.userId);
+  return res.status(204).send();
+}
+
 export async function listProjects(req: Request, res: Response) {
   const projects = await projectService.getProjectsForUser(req.user!.id);
   return res.json(projects);

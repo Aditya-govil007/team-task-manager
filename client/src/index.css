@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-200;
+  }
+
+  .dark body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .dark .bg-white {
+    @apply bg-slate-900;
+  }
+
+  .dark .bg-slate-50\/80,
+  .dark .bg-slate-50\/50 {
+    @apply bg-slate-800/60;
+  }
+
+  .dark .bg-slate-100 {
+    @apply bg-slate-800;
+  }
+
+  .dark .border-slate-200,
+  .dark .border-slate-200\/80 {
+    @apply border-slate-700;
+  }
+
+  .dark .text-slate-900,
+  .dark .text-slate-800 {
+    @apply text-slate-100;
+  }
+
+  .dark .text-slate-700,
+  .dark .text-slate-600 {
+    @apply text-slate-300;
+  }
+
+  .dark .text-slate-500 {
+    @apply text-slate-400;
+  }
+
+  .dark .placeholder\:text-slate-400::placeholder {
+    color: #64748b;
+  }
+
+  .dark input,
+  .dark select {
+    @apply border-slate-700 bg-slate-950 text-slate-100;
+  }
+
+  .dark .shadow-sm,
+  .dark .shadow-md {
+    box-shadow: none;
+  }
+}

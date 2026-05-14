@@ -7,7 +7,8 @@ import { validate } from "../middlewares/validation.middleware";
 import {
   addProjectMemberSchema,
   createProjectSchema,
-  projectIdParamSchema
+  projectIdParamSchema,
+  removeProjectMemberSchema
 } from "../validators/project.validator";
 
 const router = Router();
@@ -21,6 +22,17 @@ router.post(
   authorize([Role.ADMIN]),
   validate(addProjectMemberSchema),
   asyncHandler(projectController.addProjectMember)
+);
+router.get(
+  "/:id/members",
+  validate(projectIdParamSchema),
+  asyncHandler(projectController.getProjectMembers)
+);
+router.delete(
+  "/:id/members/:userId",
+  authorize([Role.ADMIN]),
+  validate(removeProjectMemberSchema),
+  asyncHandler(projectController.removeProjectMember)
 );
 
 export default router;
